@@ -1,16 +1,151 @@
 <!DOCTYPE html>
 <html>
-<head lang="uk">
-    <meta charset="UTF-8">
+  <head lang="uk">
+    <meta charset="UTF-8" />
     <title>My Page</title>
-
-
     <link rel="stylesheet" type="text/css" href="main.css" />
-</head>
-<body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
-</body>
+  </head>
+  <body>
+    <div class="full-container">
+      <div class="container">
+        <!-- Left column -->
+        <div class="left-column">
+          <div class="input-container">
+            <input type="text" placeholder="Назва товару" />
+            <button class="button-add" data-tooltip="Додати товар">
+              Додати
+            </button>
+          </div>
+          <ul class="item-list">
+            <li class="item">
+              <div class="name-container">
+                <span class="name-container-tomato">Помідори</span>
+              </div>
+              <div class="quantity-container">
+                <div class="quantity">2</div>
+              </div>
+              <div class="actions-container">
+                <button
+                  class="button button-complete"
+                  data-tooltip="Товар вже куплено"
+                >
+                  Не куплено
+                </button>
+              </div>
+            </li>
+            <li class="item">
+              <div class="name-container">
+                <span>Печиво</span>
+              </div>
+              <div class="quantity-container">
+                <button
+                  class="button-decrease"
+                  data-tooltip="Зменшити кількість"
+                >
+                  -
+                </button>
+                <div class="quantity">2</div>
+                <button
+                  class="button-increase"
+                  data-tooltip="Збільшити кількість"
+                >
+                  +
+                </button>
+              </div>
+              <div class="actions-container">
+                <button
+                  class="button button-complete"
+                  data-tooltip="Товар додано до кошику"
+                >
+                  Куплено
+                </button>
+                <button
+                  class="button button-delete"
+                  data-tooltip="Видалити товар"
+                >
+                  x
+                </button>
+              </div>
+            </li>
+            <li class="item">
+              <div class="name-container">
+                <span>Сир</span>
+              </div>
+              <div class="quantity-container">
+                <button
+                  class="button-decrease-cheese"
+                  data-tooltip="Зменшити кількість"
+                >
+                  -
+                </button>
+                <div class="quantity">1</div>
+                <button
+                  class="button-increase"
+                  data-tooltip="Збільшити кількість"
+                >
+                  +
+                </button>
+              </div>
+              <div class="actions-container">
+                <button
+                  class="button button-complete"
+                  data-tooltip="Товар додано до кошику"
+                >
+                  Куплено
+                </button>
+                <button
+                  class="button button-delete"
+                  data-tooltip="Видалити товар"
+                >
+                  x
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- Right column -->
+        <div class="right-column">
+          <h3>Залишилося</h3>
+          <ul class="item-bought-list">
+            <li class="item-left">
+              <button
+                class="button button-buy-list"
+                data-tooltip="Товар в кошику"
+              >
+                <span>Печиво </span><span class="quantity-buy-list">2</span>
+              </button>
+            </li>
+            <li class="item-left">
+              <button
+                class="button button-buy-list"
+                data-tooltip="Товар в кошику"
+              >
+                <span>Сир </span>
+                <div class="quantity-buy-list">1</div>
+              </button>
+            </li>
+          </ul>
+          <h3>Куплено</h3>
+          <ul class="bought-list">
+            <li class="bought-item">
+              <button
+                class="button button-buy-list"
+                data-tooltip="Товар куплено"
+              >
+                <span>Помідори </span>
+                <div class="quantity-buy-list">2</div>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Badge -->
+    <div class="badge">
+      <span class="buy-list">Buy List</span>
+      <span class="created-by">Created by:</span>
+      <span class="author-name">Andriy Polianytsia</span>
+    </div>
+  </body>
 </html>
